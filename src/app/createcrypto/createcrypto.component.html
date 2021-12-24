@@ -1,0 +1,19 @@
+
+<p>Create a crypto here</p>
+
+
+<div>
+    Title: <input [(ngModel)]="crypto.title" />
+</div>
+<div>
+    Value: <input [(ngModel)]="crypto.value"/>
+</div>
+<div>
+    Description: <input [(ngModel)]="crypto.description" />
+</div>
+<div>
+    ID: <input [(ngModel)]="crypto.id" />
+</div>
+
+
+<button (click)="create()">Create!</button>

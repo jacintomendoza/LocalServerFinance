@@ -9,7 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CryptosComponent } from './cryptos/cryptos.component';
 import { CryptoComponent } from './crypto/crypto.component';
 import { EditcryptoComponent } from './editcrypto/editcrypto.component';
-import { FormsModule } from '@angular/forms'; // NEEDED FOR NGMODEL
+import { FormsModule } from '@angular/forms';
+import { CreatecryptoComponent } from './createcrypto/createcrypto.component'; // NEEDED FOR NGMODEL
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms'; // NEEDED FOR NGMODEL
     FundComponent,
     CryptosComponent,
     CryptoComponent,
-    EditcryptoComponent
+    EditcryptoComponent,
+    CreatecryptoComponent
   ],
   imports: [
     BrowserModule,

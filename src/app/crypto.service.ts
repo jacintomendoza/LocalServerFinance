@@ -27,4 +27,8 @@ export class CryptoService {
     console.log("Deleting from service....", crypto);
     return this.http.delete(`http://localhost:8082/api/cryptos/${crypto.id}`);
   }
+
+  createCrypto(crypto: Crypto): Observable<any> {
+    return this.http.put(`http://localhost:8082/api/cryptos/${crypto.id}`, crypto);
+  }
 }
