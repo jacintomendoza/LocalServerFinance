@@ -1,0 +1,14 @@
+<h1>Funding</h1>
+
+
+<div *ngFor="let fund of funds">
+    <app-fund [fund]="fund" [message]="mensaje"></app-fund>
+
+    <!-- <app-fund [fund]="fund" [message]="mensaje"></app-fund> -->
+
+    <!-- @Input() fund: Fund = {}; FROM component -->
+
+
+    <!-- ORGINAL CODE: -->
+    <!-- <a [routerLink]="['/funds', fund.id]">{{fund.title}}</a> -->
+</div>
